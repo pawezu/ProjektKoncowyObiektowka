@@ -1,0 +1,27 @@
+1. /*********/ Ogólne założenia klasy
+
+ Klasa III_DynamiczneLiczby jest klasą publiczną, która zawiera dwie metody generujące losowe liczby całkowite w określonym zakresie. Metody te wykorzystują bieżący czas systemowy do generowania losowych liczb.
+
+2. /*********/ Metody wraz z opisem ich działania
+
+ - public int generuj(int min, int max): Ta metoda generuje losową liczbę całkowitą w podanym zakresie od 'min' do 'max'. Używa bieżącego czasu systemowego do generowania losowych liczb.
+
+ - int generujZSzansą(int min, int max, int additionalChance, int targetValue): Ta metoda generuje losową liczbę całkowitą w podanym zakresie od 'min' do 'max', ale dodaje dodatkową szansę na wygenerowanie wyższej liczby, jeżeli wygenerowana liczba jest mniejsza lub równa 'targetValue'. Szansa na wygenerowanie wyższej liczby jest określona przez 'additionalChance'.
+
+3. /*********/ Przykładowe wywołanie metod
+
+ III_DynamiczneLiczby generator = new III_DynamiczneLiczby();
+ int liczba = generator.generuj(1, 10);
+ int liczbaZSzansa = generator.generujZSzansą(1, 10, 20, 5);
+
+4. /*********/ Rzeczy do zrealizowania w przyszłości
+
+BRAK
+
+5. /*********/ Klasa macierzysta
+
+BRAK
+
+6. /*********/ Klasy pochodne
+
+BRAK
